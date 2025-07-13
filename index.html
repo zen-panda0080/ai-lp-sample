@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIプログラミング学習コミュニティ - 未来をコードで創造しよう</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --primary-hover-color: #0056b3;
+            --dark-bg: #1a1a1a;
+            --light-bg: #2c2c2c;
+            --text-color: #f4f4f4;
+            --text-secondary-color: #a0a0a0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary-color);
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-hover-color);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: center 0%; /* この行で切り抜き位置を調整 */
+            border-radius: 50%;
+            margin-bottom: 25px;
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section:nth-child(odd) {
+            background-color: var(--light-bg);
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .feature-card {
+            background-color: var(--dark-bg);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #444;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--primary-color);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+
+        .cta-section .cta-button {
+            background-color: #fff;
+            color: var(--primary-color);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-section .cta-button:hover {
+            background-color: #e2e6ea;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #111;
+            color: var(--text-secondary-color);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <img src="image (1).jpg" alt="コミュニティロゴ" class="hero-image">
+            <h1>AIプログラミングの未来を、共に創ろう</h1>
+            <p>初心者からエキスパートまで歓迎。AI開発を学ぶ、実践する、仲間と繋がるコミュニティ。</p>
+            <!-- IMPORTANT: Replace "#" with your actual Discord invite link -->
+            <a href="https://discord.gg/J6QcsNRH" class="cta-button">今すぐDiscordに参加する</a>
+        </div>
+    </header>
+
+    <!-- About the Community Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>コミュニティで得られること</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>最新技術の学習</h3>
+                    <p>毎週の勉強会や資料共有で、最新のAI論文やフレームワークをキャッチアップ。実践的な知識が身につきます。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>プロジェクト開発</h3>
+                    <p>チームを組んで、Webアプリや分析モデルを開発。企画から実装まで、実務に近い経験を積むことができます。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>頼れる仲間との繋がり</h3>
+                    <p>同じ目標を持つ仲間と交流し、モチベーションを高め合えます。質問やコードレビューも活発です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who it's for Section -->
+    <section id="for-whom" class="section">
+        <div class="container">
+            <h2>こんな方におすすめ</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>AI学習を始めたい方</h3>
+                    <p>何から学べば良いか分からない初心者の方でも、ロードマップやメンターのサポートで安心して学習を始められます。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>ポートフォリオを作りたい方</h3>
+                    <p>独学では作れないような質の高い成果物を、チーム開発を通じて作成し、就職・転職活動に活かせます。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>現役エンジニアの方</h3>
+                    <p>新しい技術領域への挑戦や、AI分野での人脈形成の場として。副業や共同開発のチャンスも見つかります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>さあ、あなたもコミュニティの一員に。</h2>
+            <!-- IMPORTANT: Replace "#" with your actual Discord invite link -->
+            <a href="https://discord.gg/J6QcsNRH" class="cta-button">Discordに参加して学習を始める</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AIプログラミング学習コミュニティ. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
